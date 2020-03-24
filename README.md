@@ -17,3 +17,7 @@ account.
 Also make sure remote control is enabled in the MMDVMHost config. If you have changed the default port then this will need to be changed in the main python code.
 Setup the config file for your settings. commenting out the talkgroups will disable them. Everything else should be self explainatory.
 Dont forget your pager number. This wont effect anything network side but you wont rx on your pager.
+
+
+Cheers 73's
+Tim VK3FTZD
