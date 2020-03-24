@@ -1,2 +1,19 @@
-# mmdvm-dmr2pocsag
-Python script to send pocsag pages from DMR TG to the MMDVMHost
+DMR to POCSAG python script.
+
+Desiged to be used with MMDVMHost with DMR mode enabled to send private talkgroups to get status messages from the hotspot onto a pocsag pager.
+
+Original code is by Andy Taylor (MW0MWZ) and was called pistar-remote.py. while this version maintains some of the original code but has been changed a lot and cannot be forked.
+
+This version started as a few changes to the original code by removing the extra modes and allowing the status messages to be returned by using the RemoteCommand included with the MMDVMHost package.
+Later I have added paging for when selected users kerchunk the talk group you have running on your hotspot without the need for your radio to be on.
+These users are setup in the config file and I will be adding a talkgroup filter for if you are like me and have more than one network running (BM and DMR-MARC)
+
+Lots of credit goes to Andy the original creater of the script pistar-remote as without his script I would not have made this.
+
+Terry (VK3FTJS) has also been there to help me a lot along the way with a lot of testing. especially with the user paging stuff.
+
+Setup is simple. Make sure you have all of the POCSAG stuff enabled in your MMDVMHost config. This includes the POCSAG network just dont have the POCSAG gateway running. You could always setup a DAPNET
+account.
+Also make sure remote control is enabled in the MMDVMHost config. If you have changed the default port then this will need to be changed in the main python code.
+Setup the config file for your settings. commenting out the talkgroups will disable them. Everything else should be self explainatory.
+Dont forget your pager number. This wont effect anything network side but you wont rx on your pager.
