@@ -24,6 +24,7 @@ Setup the config file for your settings. commenting out the talkgroups will disa
 
 Dont forget to your pager CAP number. This wont effect anything network side but you wont rx on your pager if this is not setup.
 
+Enter "/opt/mmdvm-dmr2pocsag/dmr2pocsag.py > /dev/null &" into your startup script to start the program. Or crontab it if preferred.
 
 Cheers 73's
 Tim VK3FTZD
